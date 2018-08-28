@@ -25,11 +25,11 @@ The hardware is the most developped part of this project as the code is still be
 - 30mm 0.15A fan
 - 3D printed structure
 
-### Not A Kiwi Board
+#### Not A Kiwi Board
 The board is a simple Atmega32 based board that includes 4 stepper motor driver carriers sockets as well as support for an ESP01 chip, communicating over either UART or I2C depending on a choice of jumpers. The BOM is rather small, as the board is meant to be programmed through ICSP. It is easily possible to send the BOM and Gerber files to a PCB production service to obtain one, although I can also provide fully soldered and tested ones for a fee (Europe only).
 
 #### PCB BOM
-The board uses a majority of SMD components, all 1206 except the AVR smoothing capacitor and a zener diode to adapt the 5V logic of the avr to the 3.3V of the ESP01. 
+The board uses a majority of SMD components, all 1206 except the AVR smoothing capacitor and a zener diode to adapt the 5V logic of the avr to the 3.3V of the ESP01.
 
 - Atmega32 SMD
 - 2 1206 LED
@@ -45,15 +45,15 @@ The board uses a majority of SMD components, all 1206 except the AVR smoothing c
 - A bunch of female and male header pins with standard spacing
 - 2.53mm JST connectors female
 
-- 1206 resistances : 
+- 1206 resistances :
   - 1M
-  - 100k 
+  - 100k
   - 47.5k
   - 10k
   - 4.751k  
   - 160
-  
-  ### 3D printed structure
-  
+
+#### 3D printed structure
+
   The robot uses a simple 3D printed structure composed of 12 parts, it takes approximately 12 hours to print, not counting in the 3D printed omniwheels, but it would be much better to use bought ones, albeit more expensive (3D printed wheels have a negligeable cost, but perform more poorly, several design will be tested and offered here).
   The CAD files provided are Fusion 360 parametric files and therefore should also be compatible with Autodesk Inventor and SolidWorks (tested). If you just wish to print the robot, .STL files are also provided. The Kit also uses M3 screws and nuts, it is very quick and easy to assemble (probably less than an hour).
