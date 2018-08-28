@@ -1,13 +1,13 @@
 # Not_A_Kiwi
-Not A Kiwi is an Open-Source, fully 3D printed holonomic robot controlled by a custom PCB. Its aims are to be an educational plateform for engineering students and an entry in the 2019 Coupe de France de Robotique for the Robotics Assocations of Télécom Physique Strasbourg.
+Not A Kiwi is an Open-Source, fully 3D printed holonomic robot controlled by a custom PCB. Its aims are to be an educational platform for engineering students and an entry in the 2019 Coupe de France de Robotique for the Robotics Assocations of Télécom Physique Strasbourg.
 
-This robot is meant for anyone seeking to have a fun and open robotics plateform to learn and expand on. The only tool needed to build one is a 3D printer, as the PCB can be bought online or provided by me (soldered or not).
+This robot is meant for anyone seeking to have a fun and looking for an open robotics plateform to learn and expand on. The only tool needed to build one is a 3D printer, as the PCB can be bought online or provided by me (soldered or not).
 
 ## Features
-- AVR structure, easily programmable with any ISP programmer with a standard ICSP Header.
+- Based on a standard ATMega32, easily programmable with any ISP programmer with a standard ICSP Header.
 - Many headers and an integrated breadboard to test out new ideas and add sensors.
 - Very easy to print, no complex parts.
-- Modular 3D printed structure allows to add any kind of sensor or effector.
+- Modular 3D printed structure makes it easy to add any kind of sensor or effector.
 - ESP01 socket (UART or I2C communication with the AVR).
 
 ## Hardware
@@ -15,10 +15,10 @@ The hardware is the most developped part of this project as the code is still be
 
 ### BOM
 - 4 Nema17 stepper motors (38mm)
-- 4 DRV8825 stepper motor driver carriers (or A4988 based ones)
+- 4 DRV8825 stepper motor driver carriers (or A4988-Pinout-Compatible)
 - 5V Pololu Regulator (D24V5F5, but I intend to replace them with a simpler/cheaper solution)
 - 3.3V Pololu regulator (D24V5F3)
-- ESP01
+- ESP01 (not required)
 - 12V LiPo battery (but any 12V battery will work fine)
 - Not A Kiwi Board (Detailed below)
 - Small Breadboard
@@ -26,7 +26,7 @@ The hardware is the most developped part of this project as the code is still be
 - 3D printed structure
 
 ### Not A Kiwi Board
-The board is a simple Atmega32 based board that includes 4 stepper motor driver carriers sockets as well as the support for an ESP01 chip, either over UART, or I2C depending on a choice of jumpers. The BOM is rather small, as the board is meant to be programmed through ICSP. It is easily possible to send the BOM and Gerber files to a PCB production service to obtain one, although I can also provide fully soldered and tested ones for a fee (Europe only).
+The board is a simple Atmega32 based board that includes 4 stepper motor driver carriers sockets as well as support for an ESP01 chip, communicating over either UART or I2C depending on a choice of jumpers. The BOM is rather small, as the board is meant to be programmed through ICSP. It is easily possible to send the BOM and Gerber files to a PCB production service to obtain one, although I can also provide fully soldered and tested ones for a fee (Europe only).
 
 #### PCB BOM
 The board uses a majority of SMD components, all 1206 except the AVR smoothing capacitor and a zener diode to adapt the 5V logic of the avr to the 3.3V of the ESP01. 
