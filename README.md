@@ -19,7 +19,7 @@ The hardware is the most developped part of this project as the code is still be
 - 5V Pololu Regulator (D24V5F5, but I intend to replace them with a simpler/cheaper solution)
 - 3.3V Pololu regulator (D24V5F3)
 - ESP01 (not required)
-- 12V LiPo battery (but any 12V battery will work fine)
+- 12V LiPo battery (but any 12V to 36V battery will work fine)
 - Not A Kiwi Board (Detailed below)
 - Small Breadboard
 - 30mm 0.15A fan
