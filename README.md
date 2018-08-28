@@ -31,27 +31,10 @@ The board is a simple Atmega32 based board that includes 4 stepper motor driver 
 #### PCB BOM
 The board uses a majority of SMD components, all 1206 except the AVR smoothing capacitor and a zener diode to adapt the 5V logic of the avr to the 3.3V of the ESP01.
 
-- Atmega32 SMD
-- 2 1206 LED
-- RB751S40T1G Zener diode
+Most of these components can be soldered by hand, although it is advised to use solder paste and a reflow oven (a simple and inexpensive toaster oven is enough for this purpose).
 
-- Standard 5x20 fuse holder (+3A fast fuse)
-- HC-49S 16MHz Crystal (standard THT package)
-- 4 Radial,6.3x12mm 100µF capacitors
-- 2 1206 22pF Capacitors
-- 4 0603 capacitors (no max value)
-- SMD,5.2x5.2x1.5mm NO Tactile Switch
-- Any 2.5mm screw terminal and wire with proper battery connectors
-- A bunch of female and male header pins with standard spacing
-- 2.53mm JST connectors female
-
-- 1206 resistances :
-  - 1M
-  - 100k
-  - 47.5k
-  - 10k
-  - 4.751k  
-  - 160
+Full BOM files are provided in the repository, in a format compatible with most PCB manufacturers. 
+An article explaining the choices behind the parts, and possible alternatives will be available on the wiki.
 
 #### 3D printed structure
 
