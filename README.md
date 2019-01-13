@@ -4,12 +4,12 @@
 <img src="Pictures/Kiwi_Picture.JPG" alt="kiwi_robot" width="500" />
 </p>
 
-Not A Kiwi is an Open-Source, fully 3D printed holonomic robot controlled by a custom PCB. Its aims are to be an educational platform for engineering students and an entry in the 2019 Coupe de France de Robotique for the Robotics Assocations of Télécom Physique Strasbourg.
+Not A Kiwi is an Open-Source, fully 3D printed modular robot controlled by a custom PCB. Its aims are to be an educational platform for engineering students and an entry in the 2019 Coupe de France de Robotique for the Robotics Assocations of Télécom Physique Strasbourg as a secondary robot.
 
 This robot is meant for anyone seeking to have a fun and looking for an open robotics plateform to learn and expand on. The only tool needed to build one is a 3D printer, as the PCB can be bought online or provided by me (soldered or not).
 
 ## Features
-- Based on a standard ATMega32, easily programmable with any ISP programmer.
+- Based on a standard ATMega32, the board is arduino compatible (tested).
 - Many headers and an integrated breadboard to test out new ideas and add sensors.
 - Very easy to print, no complex parts.
 - Modular 3D printed structure makes it easy to add any kind of sensor or effector.
@@ -39,11 +39,11 @@ The hardware is the most developped part of this project as the code is still be
 The board is a simple Atmega32 based board that includes 4 stepper motor driver carriers sockets as well as support for an ESP01 chip, communicating over either UART or I2C depending on a choice of jumpers. The BOM is rather small, as the board is meant to be programmed through ICSP. It is easily possible to send the BOM and Gerber files to a PCB production service to obtain one, although I can also provide fully soldered and tested ones for a fee (Europe only).
 
 #### PCB BOM
-The board uses a majority of SMD components, all 1206 except the AVR smoothing capacitor and a zener diode to adapt the 5V logic of the avr to the 3.3V of the ESP01.
+The board uses a majority of SMD components, all 1206 except the AVR smoothing capacitor and a zener diode.
 
 Most of these components can be soldered by hand, although it is advised to use solder paste and a reflow oven (a simple and inexpensive toaster oven is enough for this purpose).
 
-Full BOM files are provided in the repository, in a format compatible with most PCB manufacturers. 
+Full BOM files will be provided in the repository, in a format compatible with most PCB manufacturers. 
 An article explaining the choices behind the parts, and possible alternatives will be available on the wiki.
 
 #### 3D printed structure
