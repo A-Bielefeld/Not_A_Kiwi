@@ -1,5 +1,7 @@
 # Not_A_Kiwi
 
+This is an old begineer project, this electronics shouldn't be replicated or used for may reasons. It stands here as an archive to remind myself of how my very first project turned out!
+
 <p align="center">
 <img src="Pictures/Kiwi_Picture.JPG" alt="kiwi_robot" width="500" />
 </p>
